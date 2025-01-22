@@ -1,0 +1,31 @@
+.banner {
+  display: flex;
+}
+.banner_container {
+  padding-top: 125px;
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner__image {
+  width: 100%;
+  height: 100%;
+  opacity: 65%;
+}
+
+.banner__text {
+  position: absolute;
+  top: auto;
+  right: auto;
+  color: white;
+  font-size: 25px;
+  line-height: 40px;
+  width: 45vw;
+  text-align: center;
+  opacity: 200%;
+  z-index: 10;
+}

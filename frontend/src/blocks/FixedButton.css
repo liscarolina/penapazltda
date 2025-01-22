@@ -1,0 +1,19 @@
+.fixedButton {
+  display: flex;
+  justify-content: center;
+  border: white solid 1px;
+  width: 170px;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  background-color: #001743;
+  text-decoration: none;
+}
+.fixedButton__icon {
+  width: 35px;
+}
+.fixedButton__text {
+  color: white;
+  padding-left: 10px;
+}

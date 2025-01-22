@@ -1,0 +1,82 @@
+.footer {
+  color: white;
+  padding-top: 60px;
+}
+
+.footer__container {
+  display: flex;
+  padding-left: 60px;
+  border-bottom: white solid 1px;
+  padding-bottom: 60px;
+}
+.footer__locations {
+  padding-right: 5%;
+}
+
+.footer__location {
+  display: flex;
+}
+.footer__title {
+  font-size: 25px;
+  line-height: 1.21;
+  margin-bottom: 30px;
+}
+.footer__location-city {
+  margin-top: 0px;
+  margin-bottom: 13px;
+  font-size: 15px;
+  min-width: 80px;
+}
+
+.footer__location-place {
+  margin-top: 0px;
+  margin-bottom: 13px;
+  font-size: 15px;
+}
+.footer__contacts {
+  font-size: 15px;
+  padding-right: 5%;
+}
+
+/* .footer__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} */
+
+.footer__link {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+.footer__icon {
+  width: 30px;
+  padding-right: 10px;
+}
+
+.footer__icon_facebook {
+  padding-top: 0px;
+}
+
+.footer__icon_whatsapp {
+  width: 35px;
+  padding-top: 15px;
+}
+
+.footer__register {
+  font-size: 15px;
+}
+
+.footer__link_register {
+  max-width: 250px;
+}
+
+.footer__copyright {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 15px;
+}
