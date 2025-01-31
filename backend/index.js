@@ -12,8 +12,8 @@ const corsOptions = {
     "http://localhost:3000",
     "http://localhost:3001",
     "http://localhost:5173",
-    //   "https://lis.streetwidecollectionservices.com",
-    //   "https://www.lis.streetwidecollectionservices.com",
+    "https://penapaz.com",
+    "https://www.penapaz.com",
   ],
 };
 app.use(cors(corsOptions));
@@ -41,6 +41,7 @@ app.use((err, req, res, next) => {
   const { statusCode = 500, message } = err;
   res.status(statusCode).send({
     err,
+    error: message,
     message:
       statusCode === 500 ? "Se ha producido un error en el servidor" : message,
   });

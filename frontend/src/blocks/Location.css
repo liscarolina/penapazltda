@@ -77,3 +77,10 @@
   border: 0;
   border-radius: 5px;
 }
+@media screen and (max-width: 431px) {
+  .location {
+    padding-top: 130px;
+    padding-bottom: 40px;
+    margin-bottom: -60px;
+  }
+}

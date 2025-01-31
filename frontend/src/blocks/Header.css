@@ -24,6 +24,10 @@
   animation: mover-izq-der 10s infinite;
 }
 
+.header__contact-mobile {
+  display: none;
+}
+
 @keyframes mover-izq-der {
   from {
     transform: translateX(-1000px);
@@ -37,4 +41,34 @@
   max-width: 30px;
   padding-right: 5px;
   padding-left: 20px;
+}
+
+@media screen and (max-width: 431px) {
+  .header {
+    padding-bottom: 10px;
+  }
+  .header__contact-mobile {
+    background-color: #001743;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -10px;
+  }
+
+  .header__contact {
+    display: none;
+  }
+  .header__contact-mobile-text {
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.21;
+    font-weight: 400;
+    text-decoration: none;
+    animation: none;
+  }
+  .header__contact-logo {
+    display: block;
+    max-width: 150px;
+  }
 }

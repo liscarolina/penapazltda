@@ -30,6 +30,8 @@
   border: 1px solid white;
   border-radius: 3px;
   padding-left: 3px;
+  margin-left: 0px;
+  margin-right: 0px;
   padding-top: 3px;
   padding-bottom: 3px;
 }
@@ -49,4 +51,35 @@
 .navbar__icon {
   max-width: 25px;
   padding-right: 5px;
+}
+
+@media screen and (max-width: 431px) {
+  .navbar__logo {
+    display: none;
+  }
+  .navbar__icon {
+    display: none;
+    /* max-width: 20px;
+    padding-right: 5px; */
+  }
+
+  .navbar__nav {
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 12px;
+    line-height: 1.21;
+    font-weight: 400;
+  }
+  .navbar__item {
+    height: 35px;
+    width: 70px;
+    justify-content: center;
+    padding-left: 0px;
+  }
+  .navbar__link {
+    text-align: center;
+    padding-right: 0px;
+  }
 }

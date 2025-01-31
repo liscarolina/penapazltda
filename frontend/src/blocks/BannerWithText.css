@@ -2,7 +2,7 @@
   display: flex;
 }
 .banner_container {
-  padding-top: 125px;
+  padding-top: 120px;
   display: flex;
   position: relative;
   width: 100vw;
@@ -28,4 +28,11 @@
   text-align: center;
   opacity: 200%;
   z-index: 10;
+}
+
+@media screen and (max-width: 431px) {
+  .banner_container {
+    height: 50vh;
+    padding-top: 150px;
+  }
 }

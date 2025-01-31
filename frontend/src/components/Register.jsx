@@ -1,8 +1,15 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Logo from "../images/logo-header.jpg";
+import FormValidator from "./FormValidator";
 
 const Register = ({ onRegister, children }) => {
+  const formRef = useRef();
+  useEffect(() => {
+    const formValidator = new FormValidator(formRef.current);
+    formValidator.enableValidation();
+  }, []);
+
   const [data, setData] = useState({
     name: "",
     lastname: "",
@@ -33,8 +40,9 @@ const Register = ({ onRegister, children }) => {
         <div className="register__container">
           <h1 className="register__welcome">Regístrate</h1>
           <form
-            className="register__form"
+            ref={formRef}
             autoComplete="off"
+            className="register__form"
             onSubmit={handleSubmit}
           >
             <input
@@ -49,11 +57,12 @@ const Register = ({ onRegister, children }) => {
               minLength="2"
               maxLength="40"
             />
+            <span className="register__error register__error-email"></span>
             <input
               className="register__input"
               placeholder="Nombre"
               id="nombre"
-              name="nombre"
+              name="name"
               type="text"
               value={data.name}
               onChange={handleChange}
@@ -61,12 +70,12 @@ const Register = ({ onRegister, children }) => {
               minLength="2"
               maxLength="40"
             />
-
+            <span className="register__error register__error-name"></span>
             <input
               className="register__input"
               placeholder="Apellido"
               id="apellido"
-              name="apellido"
+              name="lastname"
               type="text"
               value={data.lastname}
               onChange={handleChange}
@@ -74,22 +83,22 @@ const Register = ({ onRegister, children }) => {
               minLength="2"
               maxLength="40"
             />
-
+            <span className="register__error register__error-lastname"></span>
             <input
               className="register__input"
               placeholder="Número de teléfono móvil"
               id="telef"
               name="telef"
               type="text"
-              value={data.telefono}
+              value={data.telef}
               onChange={handleChange}
               required
               minLength="10"
               maxLength="10"
             />
-
+            <span className="register__error register__error-telef"></span>
             <button type="submit" className="register__button">
-              Regístrate
+              Obtener 10% de descuento
             </button>
           </form>
           <div className="register__signin">

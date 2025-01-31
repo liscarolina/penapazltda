@@ -7,9 +7,11 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && scp -r ./dist/* liscarolina.92@34.127.77.5:/home/liscarolina.92/frontend"
   },
   "dependencies": {
+    "@firebasegen/default-connector": "file:dataconnect-generated/js/default-connector",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-responsive-carousel": "^3.2.23",

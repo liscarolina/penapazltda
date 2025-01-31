@@ -1,29 +1,11 @@
-// import { useContext } from "react";
-import { NavLink } from "react-router-dom";
 import homeIcon from "../images/home-icon.svg";
 import aboutUsIcon from "../images/aboutUs-icon.svg";
 import locationIcon from "../images/location-icon.svg";
 import productsIcon from "../images/products-icon.svg";
 import brandsIcon from "../images/catalog-icon.svg";
 import Logo from "../images/logo-header.jpg";
-// import "./styles/NavBar.css";
-// import { removeToken } from "../utils/token";
-// import AppContext from "../context/AppContext";
 
 function NavBar() {
-  // Invocar el hook.
-  //   const navigate = useNavigate();
-  //   const { setIsLoggedIn } = useContext(AppContext);
-
-  // La función signOut elimina el token del almacenamiento
-  // local, los envía de vuelta a la página de inicio de sesión, y
-  // establece isLoggedIn como falso.
-  //   function signOut() {
-  //     removeToken();
-  //     navigate("/login");
-  //     setIsLoggedIn(false);
-  //   }
-
   return (
     <div className="navbar">
       <img className="navbar__logo" src={Logo} alt="Logo Penapaz Ltda" />

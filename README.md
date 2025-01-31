@@ -1,4 +1,4 @@
-# Tripleten web_project_api_full
+# Tripleten Penapaz Ltda
 
 Around es el proyecto final full stack del programa de desarrollo web de Tripleten.
 Tiene dos partes backend y frontend. Ambas almacenadas en un servidor VM de google cloud.
